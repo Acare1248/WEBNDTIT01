@@ -39,7 +39,7 @@ namespace WebNDTIT01
         public void ConfigureServices(IServiceCollection services)
         {
             
-            var connectionString = "Server=10.0.0.51;User=ndtuser;Password=NDTuser@1234;Database=ndt_db";
+            //var connectionString = "Server=10.0.0.51;User=ndtuser;Password=NDTuser@1234;Database=ndt_db";
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
 
             services.AddDatabaseDeveloperPageExceptionFilter();
@@ -54,8 +54,8 @@ namespace WebNDTIT01
            // services.AddDbContext<ndt_dbContext>(
                 DbContextOptions => DbContextOptions
                 //options => options
-                //.UseMySql(Configuration.GetConnectionString("DefaultConnection"),serverVersion)
-                .UseMySql(connectionString,serverVersion)
+                .UseMySql(Configuration.GetConnectionString("DefaultConnection"),serverVersion)
+                //.UseMySql(connectionString,serverVersion)
                 //.UseMySql(Configuration["ConnectionStrings:DefaultConnection"], serverVersion)
                 .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information)
                 .EnableSensitiveDataLogging()
