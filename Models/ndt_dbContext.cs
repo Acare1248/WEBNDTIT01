@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 #nullable disable
 
@@ -12,13 +13,20 @@ namespace WebNDTIT01.Models
         {
 
         }
-         public ndt_dbContext(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-        public IConfiguration Configuration { get; }
-        //public ndt_dbContext(DbContextOptions<ndt_dbContext> DbContextOptions): base(DbContextOptions){ }
-        public ndt_dbContext(DbContextOptions DbContextOptions) : base(DbContextOptions) { }
+        //private  readonly IConfiguration Configuration;
+        //private readonly string _connectionString;
+
+       /* public ndt_dbContext(IConfiguration configuration)
+            {
+                Configuration = configuration;
+            }*/
+        /* public ndt_dbContext(string connectionString)
+            {
+                _connectionString = connectionString;
+            }*/
+        public ndt_dbContext(DbContextOptions<ndt_dbContext> options)
+            : base(options){ }
+        //public ndt_dbContext(DbContextOptions options) : base(options) { }
         public virtual DbSet<EfmigrationsHistory> EfmigrationsHistories { get; set; }
         public virtual DbSet<MailreportlogTbCollectionsYearMonth> MailreportlogTbCollectionsYearMonths { get; set; }
         public virtual DbSet<TbAntiVirusinfo> TbAntiVirusinfos { get; set; }
@@ -39,13 +47,17 @@ namespace WebNDTIT01.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            {//entially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                //optionsBuilder.UseMySql("server=10.0.0.51;user=ndtuser;password=NDTuser@1234;database=ndt_db", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.6.1-mariadb"));
-                optionsBuilder.UseMySql(
-                                        Configuration.GetConnectionString("DefaultConnection"),
-                                        Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.6.1-mariadb"));
+            {
+                optionsBuilder.UseMySql("server=10.0.0.51;user=ndtuser;password=NDTuser@1234;database=ndt_db", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.6.1-mariadb"));
+                //optionsBuilder.UseMySql(connectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.6.1-mariadb"));
             }
         }
+        /*protected override void OnConfiguring(DbContextOptionsBuilder options)
+            {
+                // connect to mysql with connection string from app settings
+                //var connectionString = Configuration.GetConnectionString("name=ConnectionStrings:DefaultConnection");
+                options.UseMySql(_connectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.6.1-mariadb"));
+            }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

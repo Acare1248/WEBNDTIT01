@@ -1,13 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
-using System.Text;
+
 
 namespace WebNDTIT01
 {
@@ -16,8 +9,6 @@ namespace WebNDTIT01
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            //InsertData();
-            //Printdata();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

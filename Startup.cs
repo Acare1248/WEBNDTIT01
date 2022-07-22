@@ -1,14 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using WebNDTIT01.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,8 +21,12 @@ namespace WebNDTIT01
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
+
             Configuration = builder.Build();
+
             LDAPUtil.Register(Configuration);
+
+           
         }
         public Startup(IConfiguration configuration)
         {
@@ -39,7 +37,8 @@ namespace WebNDTIT01
         public void ConfigureServices(IServiceCollection services)
         {
             
-            //var connectionString = "Server=10.0.0.51;User=ndtuser;Password=NDTuser@1234;Database=ndt_db";
+            var connectionString = "Server=10.0.0.51;User=ndtuser;Password=NDTuser@1234;Database=ndt_db";
+            //var connectionString = Configuration["ConnectionStrings:DefaultConnection"];
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
 
             services.AddDatabaseDeveloperPageExceptionFilter();
@@ -49,9 +48,17 @@ namespace WebNDTIT01
                     .AddEntityFrameworkStores<ndt_dbContext>();
             services.AddControllersWithViews();
 
-                services.AddEntityFrameworkMySql()
-                .AddDbContext<ndt_dbContext>(
-           // services.AddDbContext<ndt_dbContext>(
+            services.AddDbContext<ndt_dbContext>(
+                options => options
+                .UseMySql(connectionString, serverVersion)
+                .EnableSensitiveDataLogging()
+                .EnableDetailedErrors()
+            );
+            //services.AddControllers();
+
+                //services.AddEntityFrameworkMySql()
+                //.AddDbContext<ndt_dbContext>(
+            /*services.AddDbContext<ndt_dbContext>(
                 DbContextOptions => DbContextOptions
                 //options => options
                 .UseMySql(Configuration.GetConnectionString("DefaultConnection"),serverVersion)
@@ -60,7 +67,7 @@ namespace WebNDTIT01
                 .LogTo(Console.WriteLine, Microsoft.Extensions.Logging.LogLevel.Information)
                 .EnableSensitiveDataLogging()
                 .EnableDetailedErrors()
-            );
+            );*/
            
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             .AddCookie(config =>
