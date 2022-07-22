@@ -11,20 +11,20 @@ namespace WebNDTIT01.Controllers
     public class InventoryListController :Controller
     {
         private readonly ILogger<HomeController> _logger;
-        //private readonly ndt_dbContext db;
+        private readonly ndt_dbContext db;
         public InventoryListController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-        /*public InventoryListController(ndt_dbContext context)
+        public InventoryListController(ndt_dbContext context)
         {
             db = context;
         }
-*/
+
         [Authorize(Roles = "Administrator")]
         public IActionResult ComputerList()
         {
-            var db = new ndt_dbContext();
+            //var db = new ndt_dbContext();
             var rslt = (  from cl in db.TbComputerLists
                             join usr in db.TbUsers on cl.UserId equals usr.IdUser into usrs 
                             from rsusr in usrs.DefaultIfEmpty()
