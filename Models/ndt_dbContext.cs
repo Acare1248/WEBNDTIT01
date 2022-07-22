@@ -30,14 +30,14 @@ namespace WebNDTIT01.Models
         public virtual DbSet<DeviceAndTypesOfReport> DeviceAndTypesOfReports {get; set;}
         public virtual DbSet<DuplicateCheck> DuplicateChecks {get; set;}
 
-      /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {//entially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseMySql("server=10.0.0.51;user=ndtuser;password=NDTuser@1234;database=ndt_db", Microsoft.EntityFrameworkCore.ServerVersion.Parse("10.6.1-mariadb"));
             }
         }
-*/
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasCharSet("utf8mb4")
