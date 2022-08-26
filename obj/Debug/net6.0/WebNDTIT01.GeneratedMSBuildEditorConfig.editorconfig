@@ -8,85 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebNDTIT01
 build_property.RootNamespace = WebNDTIT01
-build_property.ProjectDir = D:\source\vs-code\WebNDTIT01\
+build_property.ProjectDir = C:\Users\Administrator\Documents\GitHub\WEBNDTIT01\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\source\vs-code\WebNDTIT01
+build_property.MSBuildProjectDirectory = C:\Users\Administrator\Documents\GitHub\WEBNDTIT01
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/source/vs-code/WebNDTIT01/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Account/AccessDenied.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Account/Login.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Config/MailReport.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Config/MailReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlnXE1haWxSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Config/MailReportConfig.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Config/MailReportConfig.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZmlnXE1haWxSZXBvcnRDb25maWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Documents/PurchaseRequest.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Documents/PurchaseRequest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdW1lbnRzXFB1cmNoYXNlUmVxdWVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Home/ComputerList.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Home/ComputerList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wdXRlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Home/Index.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Home/Privacy.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/InventoryList/ComputerList.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/InventoryList/ComputerList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5TGlzdFxDb21wdXRlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Login/Index.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Shared/Error.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Shared/_Layout.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/TrackingTheReport/Email.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/TrackingTheReport/Email.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tpbmdUaGVSZXBvcnRcRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/TrackingTheReport/ReportTracking.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/TrackingTheReport/ReportTracking.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tpbmdUaGVSZXBvcnRcUmVwb3J0VHJhY2tpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/_ViewImports.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/source/vs-code/WebNDTIT01/Views/_ViewStart.cshtml]
+[C:/Users/Administrator/Documents/GitHub/WEBNDTIT01/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

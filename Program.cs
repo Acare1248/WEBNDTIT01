@@ -16,7 +16,7 @@ namespace WebNDTIT01
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://10.0.0.51:5000");
+                    webBuilder.UseUrls("http://10.0.0.136:5000");
                 });
     
     /*private static void Printdata()
